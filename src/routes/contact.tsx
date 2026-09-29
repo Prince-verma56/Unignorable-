@@ -193,7 +193,7 @@ function ContactPage() {
                       name="email"
                       autoComplete="email"
                       required
-                      placeholder="you@company.com"
+                      placeholder="hello@unignorable.studio"
                     />
                   </Field>
                   <Field label="Phone / WhatsApp">

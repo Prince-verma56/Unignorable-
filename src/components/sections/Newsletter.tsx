@@ -54,7 +54,7 @@ export function NewsletterForm() {
               setEmail(e.target.value);
               if (state === "error") setState("idle");
             }}
-            placeholder="you@company.com"
+            placeholder="hello@unignorable.studio"
             className="w-full bg-transparent text-base placeholder:text-muted-foreground disabled:opacity-50"
           />
           <button

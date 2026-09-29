@@ -88,23 +88,21 @@ export function Cursor() {
       data-mode="default"
       style={{ opacity: 0 }}
       /*
-       * A ring, not a disc. The baseline grew a filled 96px circle under the
-       * pointer, which sat on top of whatever the reader was about to read.
-       * This stays hollow, so nothing is ever hidden, and `mix-blend-difference`
-       * means it is legible on paper, on ink and on a photograph without
-       * needing to know which it is over.
+       * Upgraded cursor: Rather than a mix-blend ring that can get lost on photos,
+       * we use a highly legible solid accent color. The default is a precise dot,
+       * and hovers expand into a solid disc with high-contrast text.
        */
-      className="pointer-events-none fixed left-0 top-0 z-[70] flex items-center justify-center rounded-full border border-bone bg-bone mix-blend-difference
-        transition-[width,height,background-color,border-width,opacity] duration-[320ms] ease-[cubic-bezier(0.16,1,0.3,1)]
-        size-2
-        data-[mode=cta]:size-10 data-[mode=cta]:bg-transparent
-        data-[mode=view]:size-14 data-[mode=view]:bg-transparent
-        data-[mode=explore]:size-14 data-[mode=explore]:bg-transparent
-        data-[mode=drag]:size-14 data-[mode=drag]:bg-transparent"
+      className="pointer-events-none fixed left-0 top-0 z-[70] flex items-center justify-center rounded-full
+        transition-[width,height,background-color,opacity,transform] duration-[320ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+        size-3 bg-signal
+        data-[mode=cta]:size-12 data-[mode=cta]:bg-signal/20 data-[mode=cta]:border-2 data-[mode=cta]:border-signal
+        data-[mode=view]:size-20 data-[mode=view]:bg-signal
+        data-[mode=explore]:size-20 data-[mode=explore]:bg-signal
+        data-[mode=drag]:size-20 data-[mode=drag]:bg-signal"
     >
       <span
         ref={label}
-        className="type-meta text-[0.52rem] text-bone opacity-0 transition-opacity duration-200
+        className="type-meta text-[0.65rem] font-bold uppercase tracking-widest text-ink opacity-0 transition-opacity duration-300
           [[data-mode=view]>&]:opacity-100 [[data-mode=explore]>&]:opacity-100 [[data-mode=drag]>&]:opacity-100"
       />
     </div>

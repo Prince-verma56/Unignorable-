@@ -104,11 +104,36 @@ export function Footer() {
 
       <NewsletterForm />
 
-      <div className="mt-8 flex flex-col justify-between gap-2 border-t border-border pt-6 md:flex-row">
+      <div className="mt-8 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 sm:flex-row sm:items-start">
         <p className="type-meta text-bone/60">
           © {year} {site.name}
         </p>
-        <p className="type-meta text-bone/60">Built to be remembered.</p>
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
+          <p className="type-meta text-bone/60">Built to be remembered.</p>
+          <span className="hidden type-meta text-bone/30 sm:inline-block">/</span>
+          <a
+            href="https://princevermadev26-portfolio.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="group flex items-center gap-3 rounded-full border border-border/50 bg-background/5 p-1 pr-4 transition-all duration-300 hover:border-signal/50 hover:bg-background/10"
+          >
+            <img
+              src="https://github.com/Prince-verma56.png"
+              alt="Prince Verma"
+              width={28}
+              height={28}
+              className="size-7 rounded-full object-cover transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
+            />
+            <div className="flex flex-col text-left">
+              <span className="type-meta text-[0.7rem] text-bone transition-colors group-hover:text-signal">
+                Prince Verma
+              </span>
+              <span className="text-[0.6rem] uppercase tracking-widest text-bone/40">
+                Portfolio
+              </span>
+            </div>
+          </a>
+        </div>
       </div>
     </footer>
   );
