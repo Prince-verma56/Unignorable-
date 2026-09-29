@@ -52,7 +52,7 @@ async function sendMail(payload: { to: string; subject: string; html: string }) 
 }
 
 export const submitEnquiry = createServerFn({ method: "POST" })
-  .inputValidator((raw: EnquiryInput) => {
+  .validator((raw: EnquiryInput) => {
     const name = String(raw?.name ?? "").trim();
     const email = String(raw?.email ?? "").trim().toLowerCase();
     const message = String(raw?.message ?? "").trim();
@@ -118,7 +118,7 @@ ${rows
   });
 
 export const subscribeToNewsletter = createServerFn({ method: "POST" })
-  .inputValidator((raw: { email: string }) => {
+  .validator((raw: { email: string }) => {
     const email = String(raw?.email ?? "").trim().toLowerCase();
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error("Valid email is required.");
     return { email: email.slice(0, 180) };
