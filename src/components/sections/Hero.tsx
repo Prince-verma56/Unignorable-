@@ -118,13 +118,13 @@ export function Hero() {
               className="block h-px w-10 shrink-0 bg-signal md:w-16"
             />
             <span data-hero-eyebrow className="type-meta whitespace-nowrap text-[0.62rem] text-foreground drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)] sm:text-[0.7rem] rounded-sm bg-black/30 px-2 py-1 backdrop-blur-md md:bg-transparent md:p-0 md:backdrop-blur-none">
-              Creative · Strategy · Performance
+              Boutique · Digital-First · Unapologetic
             </span>
           </p>
 
           <div className="col-span-12 lg:col-span-8 xl:col-span-7">
             <h1 className="type-display mt-4 md:mt-6">
-              {["We make", "brands"].map((line) => (
+              {["We Don't", "Play By"].map((line) => (
                 <span key={line} className="block overflow-hidden pb-[0.04em]">
                   <span data-line className="block">
                     {line}
@@ -136,29 +136,29 @@ export function Hero() {
                   data-line
                   className="editorial block text-[1.16em] leading-[0.74] text-signal"
                 >
-                  impossible
+                  Big Agency
                 </span>
               </span>
               <span className="block overflow-hidden pb-[0.04em]">
                 <span data-line className="block">
-                  to ignore.
+                  Rules.
                 </span>
               </span>
             </h1>
 
             <p data-hero-enter className="type-lead mt-6 text-foreground/90 drop-shadow-[0_1px_8px_rgba(0,0,0,0.45)] md:mt-7">
-              Strategy, film, media and product — one independent studio, one standard.
+              Game Changer Marketing Agency — The GCC’s Organic-First Growth Partner.
             </p>
 
             <div data-hero-enter className="mt-7 flex flex-wrap items-center gap-x-8 gap-y-4 md:mt-8">
               <Action asChild variant="inverse" arrow={false}>
                 <Link to="/contact" data-cursor="cta">
-                  Start a project
+                  Free Growth Audit
                   <ArrowTag />
                 </Link>
               </Action>
-              <Link to="/work" data-cursor="cta" className="text-foreground drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)]">
-                <ActionLink>See selected work</ActionLink>
+              <Link to="/services" data-cursor="cta" className="text-foreground drop-shadow-[0_1px_8px_rgba(0,0,0,0.55)]">
+                <ActionLink>Our 9 solutions</ActionLink>
               </Link>
             </div>
           </div>
@@ -178,9 +178,9 @@ export function Hero() {
               <ArrowDown className="size-3 animate-bounce" aria-hidden="true" />
             </span>
             <span className="type-meta hidden text-foreground/85 drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)] sm:block">
-              {site.locations.join(" / ")}
+              {site.locations.slice(0, 3).join(" / ")}
             </span>
-            <span className="type-meta text-signal">Taking work for 2026</span>
+            <span className="type-meta text-signal">GCC’s Organic-First Agency</span>
           </div>
         </div>
       </div>

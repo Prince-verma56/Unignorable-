@@ -3,12 +3,12 @@ import { START, counter, revealUp, riseIn } from "@/lib/motion";
 import { Seam } from "../Seam";
 import campaignProfileSeam from "@/assets/campaign-profile.jpg";
 
-/** DEMO VALUES — replace `value` with verified numbers before launch. */
+/** Game Changer GCC market statistics — from client-supplied materials. */
 const STATS = [
-  { value: 50, suffix: "+", label: "Campaigns shipped", note: "Across nine disciplines" },
-  { value: 25, suffix: "+", label: "Brands built", note: "Retail, fitness, hospitality" },
-  { value: 10, suffix: "+", label: "Markets reached", note: "India, UAE and beyond" },
-  { value: 9, suffix: "", label: "Disciplines in-house", note: "No handoffs, no agencies" },
+  { value: 99, suffix: "%", label: "Social media penetration", note: "UAE — one of the highest on the planet" },
+  { value: 9, suffix: "", label: "Solutions in-house", note: "Retail to PR — no handoffs" },
+  { value: 6, suffix: "", label: "GCC markets", note: "UAE, KSA, Qatar, Kuwait, Bahrain, Oman" },
+  { value: 0, suffix: "", label: "Wasted Dirhams", note: "Organic-first — paid only when it earns its place" },
 ];
 
 /**
@@ -40,10 +40,10 @@ export function Stats({ withSeam = true }: { withSeam?: boolean } = {}) {
 
       <div className="relative mb-12 flex flex-wrap items-end justify-between gap-x-10 gap-y-4 border-b border-border-strong pb-5 md:mb-16">
         <h2 data-enter id="proof-heading" className="type-meta text-signal">
-          004 — Proof of motion
+          004 — Why GCC. Why now.
         </h2>
         <p data-enter className="type-body max-w-[44ch] text-muted-foreground md:text-right">
-          Structured demo metrics, ready to be replaced with verified agency data.
+          The GCC market has never been more ready. Social penetration is at an all-time high. Ad costs are rising.
         </p>
       </div>
 

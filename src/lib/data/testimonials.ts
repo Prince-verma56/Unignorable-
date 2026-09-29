@@ -1,4 +1,7 @@
-/** DEMO testimonials — replace with real, attributed quotes before launch. */
+/**
+ * Testimonials — no real client testimonials were supplied in client materials.
+ * Keeping existing structure with placeholder acknowledgment per content brief.
+ */
 export interface Testimonial {
   quote: string;
   client: string;
@@ -27,15 +30,16 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+/** GCC market names used in the marquee — replace with real clients before launch. */
 export const clientLogos = [
-  "MERIDIAN",
-  "ATLAS",
-  "NOVA",
-  "HARBOUR",
-  "KESTREL",
-  "OKAPI",
-  "NORTHBOUND",
-  "SALT&CO",
-  "VERDE",
-  "LUMEN",
+  "UAE",
+  "KSA",
+  "QATAR",
+  "KUWAIT",
+  "BAHRAIN",
+  "OMAN",
+  "DUBAI",
+  "RIYADH",
+  "DOHA",
+  "MANAMA",
 ];

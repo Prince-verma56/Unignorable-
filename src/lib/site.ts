@@ -1,12 +1,12 @@
 export const site = {
-  name: "UNIGNORABLE",
-  tagline: "We make brands impossible to ignore.",
+  name: "GAME CHANGER",
+  tagline: "Boutique. Digital-first. Unapologetic.",
   description:
-    "Independent creative and performance studio. Strategy, media, film and product — built to be remembered.",
-  email: "hello@unignorable.studio",
-  phone: "+91 90000 00000",
-  whatsappNumber: "919000000000",
-  locations: ["INDIA", "UAE", "GLOBAL"],
+    "Game Changer is a boutique, digital-first marketing agency built for GCC consumer brands that are tired of bloated retainers and generic strategies.",
+  email: "hello@gamechangeragency.com",
+  phone: "+971 4 XXX XXXX",
+  whatsappNumber: "971400000000",
+  locations: ["DUBAI", "RIYADH", "DOHA", "KUWAIT CITY", "MANAMA", "MUSCAT"],
   socials: [
     { label: "INSTAGRAM", href: "https://instagram.com" },
     { label: "LINKEDIN", href: "https://linkedin.com" },
@@ -14,17 +14,17 @@ export const site = {
 } as const;
 
 export const whatsappLink = (
-  message = "Hi — I'd like to start a project.",
+  message = "Hi — I'd like to discuss a project.",
 ): string => `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
 export const mailtoLink = (subject = "New project enquiry"): string =>
   `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;
 
 export const BUDGETS = [
-  "₹25K–₹50K",
-  "₹50K–₹1L",
-  "₹1L–₹3L",
-  "₹3L+",
+  "AED 25K–50K",
+  "AED 50K–100K",
+  "AED 100K–300K",
+  "AED 300K+",
   "Not Sure Yet",
 ] as const;
 

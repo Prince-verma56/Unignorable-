@@ -42,18 +42,17 @@ export function ServicesList({ compact = false }: { compact?: boolean } = {}) {
         <div className="edge">
           <div className="flex flex-wrap items-end justify-between gap-x-10 gap-y-6 border-b border-border-strong pb-6">
             <div>
-              <p className="type-meta text-signal">005 — Capabilities</p>
+              <p className="type-meta text-signal">005 — What we do</p>
               <SplitLines
                 as="h2"
                 id="services-heading"
-                text={"We don't do\none thing."}
+                text={"9 Weapons.\nOne Strategy."}
                 className="type-title mt-4 max-w-[9ch]"
                 start={START.early}
               />
             </div>
             <p className="type-lead text-foreground/70 md:text-right">
-              Nine disciplines. One team. One standard — because the strategist sits next
-              to the edit bay.
+              Every solution engineered to earn attention before spending a dirham on paid.
             </p>
           </div>
         </div>

@@ -60,12 +60,12 @@ export function FinalCTA() {
       <div data-rise className="edge relative grid-12 items-end gap-y-12">
         <div className="col-span-12 lg:col-span-8">
           <p data-cta-enter className="type-meta text-bone/60">
-            010 — Start something
+            010 — Let’s go
           </p>
           <SplitLines
             as="h2"
             id="cta-heading"
-            text={"Let's make\nsomething\nunignorable."}
+            text={"Ready to Stop\nRenting\nAttention?"}
             className="type-display mt-6 max-w-[11ch]"
             lineClass={(_, i) =>
               i === 2 ? "editorial text-[1.06em] lowercase text-acid" : undefined
@@ -78,7 +78,7 @@ export function FinalCTA() {
           >
             <Action asChild variant="inverse" size="lg" arrow={false}>
               <Link to="/contact" data-cursor="cta">
-                Start a project
+                Free 60-Min Organic Growth Audit
                 <ArrowTag />
               </Link>
             </Action>
@@ -110,8 +110,8 @@ export function FinalCTA() {
           className="col-span-12 grid grid-cols-2 gap-x-8 gap-y-7 self-end border-t border-border pt-7 lg:col-span-3 lg:col-start-10 lg:grid-cols-1 lg:border-t-0 lg:pt-0"
         >
           {[
-            { k: "Based", v: site.locations.join(" / ") },
-            { k: "Availability", v: "Taking work for 2026" },
+            { k: "Headquarters", v: "Dubai, UAE" },
+            { k: "Markets", v: "6 GCC Markets" },
             { k: "Direct", v: site.email },
           ].map((row) => (
             <div key={row.k} className="border-t border-border pt-3.5 lg:pt-4">

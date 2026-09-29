@@ -1,10 +1,10 @@
 const words = [
-  "Strategy",
-  "Creative",
-  "Performance",
-  "Development",
-  "Production",
-  "Culture",
+  "Retail",
+  "Social Media",
+  "Influencer",
+  "PR",
+  "Digital",
+  "Events",
 ];
 
 /**

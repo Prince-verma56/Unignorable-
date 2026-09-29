@@ -15,7 +15,7 @@ import { Marquee } from "@/components/sections/Marquee";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { site } from "@/lib/site";
 
-const title = `${site.name} — We make brands impossible to ignore`;
+const title = `${site.name} — The GCC's Organic-First Growth Partner`;
 
 export const Route = createFileRoute("/")({
   head: () => ({

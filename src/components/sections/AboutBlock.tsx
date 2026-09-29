@@ -8,10 +8,10 @@ import studio2 from "@/assets/studio-2.jpg";
 import campaignProfile from "@/assets/campaign-profile.jpg";
 
 const traits = [
-  "Independent",
-  "Senior-only team",
-  "Built for compounding",
-  "Opinionated on purpose",
+  "Boutique focus",
+  "Organic-first",
+  "Senior talent on every brief",
+  "6 GCC markets",
 ];
 
 /**
@@ -49,14 +49,14 @@ export function AboutBlock({ withSeam = true }: { withSeam?: boolean } = {}) {
           <SplitLines
             as="h2"
             id="about-heading"
-            text={"Strategists, designers,\ndevelopers, media buyers\nand storytellers."}
+            text={"The Antidote to the\nBig Agency\nMachine."}
             className="type-title mt-4 max-w-[18ch]"
             lineClass={(_, i) => (i === 2 ? "editorial text-[1.1em] lowercase text-signal" : undefined)}
             start={START.early}
           />
         </div>
         <p data-enter className="type-lead col-span-12 text-foreground/70 lg:col-span-4 lg:pb-2">
-          Senior people only, in one room. The list below is what that actually buys you.
+          We obsess over your brand — not 40 others.
         </p>
       </div>
 
@@ -84,12 +84,10 @@ export function AboutBlock({ withSeam = true }: { withSeam?: boolean } = {}) {
 
         <div data-about className="col-span-12 md:col-span-4 md:col-start-9 md:self-center">
           <p className="type-lead text-foreground/80">
-            One team, no handoffs. Strategy sits next to the edit bay, and the media buyer
-            sees the cut before it ships.
+            Game Changer is a boutique, digital-first marketing agency built for GCC consumer brands that are tired of bloated retainers and generic strategies.
           </p>
           <p className="type-body mt-6 text-muted-foreground">
-            We turn attention into business — not impressions, not applause. If a thing
-            cannot be measured or remembered, we do not make it.
+            Your brand isn’t one of 40 clients. It’s the only one that matters. We earn impressions before a single paid dirham is spent.
           </p>
           <ul className="mt-8 border-t border-border">
             {traits.map((t) => (
@@ -139,10 +137,10 @@ export function AboutBlock({ withSeam = true }: { withSeam?: boolean } = {}) {
         <div data-about className="col-span-12 flex flex-col justify-between gap-10 md:col-span-4 md:col-start-9">
           <dl className="grid grid-cols-2 gap-x-6 gap-y-6">
             {[
-              { k: "Founded", v: "2026" },
-              { k: "Model", v: "Independent" },
-              { k: "Disciplines", v: "Nine" },
-              { k: "Team", v: "Senior only" },
+              { k: "Established", v: "Dubai, UAE" },
+              { k: "Model", v: "Boutique" },
+              { k: "Solutions", v: "Nine" },
+              { k: "Markets", v: "6 GCC" },
             ].map((row) => (
               <div key={row.k} className="border-t border-border pt-3.5">
                 <dt className="type-meta text-foreground/45">{row.k}</dt>
@@ -153,12 +151,12 @@ export function AboutBlock({ withSeam = true }: { withSeam?: boolean } = {}) {
 
           <figure>
             <blockquote className="type-subtitle text-[1.3rem] leading-tight">
-              The brief is a
-              <span className="editorial text-signal"> starting position</span>, not a
-              contract.
+              Paid media is the
+              <span className="editorial text-signal"> accelerator.</span> Organic
+              is the engine.
             </blockquote>
             <figcaption className="type-meta mt-5 flex items-center justify-between gap-4 border-t border-border pt-4 text-muted-foreground">
-              How we work
+              Our philosophy
               <span aria-hidden="true" className="h-px w-8 bg-signal" />
             </figcaption>
           </figure>

@@ -109,7 +109,7 @@ export function Footer() {
           © {year} {site.name}
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
-          <p className="type-meta text-bone/60">Built to be remembered.</p>
+          <p className="type-meta text-bone/60">Built to earn attention.</p>
           <span className="hidden type-meta text-bone/30 sm:inline-block">/</span>
           <a
             href="https://princevermadev26-portfolio.vercel.app/"

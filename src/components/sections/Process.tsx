@@ -11,40 +11,40 @@ import studio1 from "@/assets/studio-1.jpg";
 const steps = [
   {
     no: "01",
-    label: "Discover",
-    body: "Business model, margins, audience, and the honest state of the brand — including the parts nobody enjoys saying out loud.",
+    label: "Audit",
+    body: "Your current paid vs. organic split, benchmarked against GCC category leaders. We show you the gap before we touch anything.",
     src: studio1,
     w: 1280,
     h: 1024,
   },
   {
     no: "02",
-    label: "Strategize",
-    body: "One idea sharp enough to survive contact with a media plan, a sales team and a quarterly review.",
+    label: "Strategy",
+    body: "One organic-first strategy built for your brand, category, and market. GCC-native. Senior attention on every brief.",
     src: campaignGlass,
     w: 1024,
     h: 1280,
   },
   {
     no: "03",
-    label: "Create",
-    body: "Film, design, product and copy built as a system, so the tenth asset costs less than the first.",
+    label: "Earn",
+    body: "Organic content, SEO, influencers, PR — compounding impressions before a single paid dirham is spent.",
     src: campaignFilm,
     w: 1008,
     h: 1312,
   },
   {
     no: "04",
-    label: "Launch",
-    body: "Ship fast, instrument everything, read the first real signal within days rather than quarters.",
+    label: "Amplify",
+    body: "Paid media deployed only to amplify what’s already performing organically. Precision targeting. Zero wasted spend.",
     src: campaignChrome,
     w: 1408,
     h: 1008,
   },
   {
     no: "05",
-    label: "Scale",
-    body: "Double down on what compounds. Kill the rest without sentiment, including our own favourites.",
+    label: "Compound",
+    body: "Content, SEO, and communities keep delivering long after campaigns end. The longer we work, the cheaper your impressions get.",
     src: campaignObject,
     w: 1280,
     h: 912,
@@ -116,10 +116,10 @@ export function Process() {
           className="flex flex-wrap items-end justify-between gap-x-10 gap-y-4 border-b border-border-strong pb-6"
         >
           <h2 id="process-heading" className="type-meta text-signal">
-            How we work
+            006 — Our organic-first approach
           </h2>
           <p className="type-lead text-foreground/70 md:text-right">
-            Five steps. Each one ends in something you can look at and argue with.
+            Five steps. Organic earns the attention. Paid amplifies what’s already working.
           </p>
         </div>
 

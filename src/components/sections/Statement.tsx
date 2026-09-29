@@ -22,45 +22,44 @@ import campaignObject from "@/assets/campaign-object.jpg";
  * touch device traps the scroll.
  */
 const CLAUSES = [
-  { text: "Attention is the", accent: false },
-  { text: "only scarce", accent: false },
-  { text: "resource left.", accent: false },
-  { text: "We don't chase it —", accent: false },
-  { text: "we build the reason", accent: false },
-  { text: "people give it.", accent: true },
+  { text: "Big agencies got", accent: false },
+  { text: "GCC brands hooked", accent: false },
+  { text: "on paid media.", accent: false },
+  { text: "The brands that WIN", accent: false },
+  { text: "earn attention.", accent: false },
+  { text: "They don't just buy it.", accent: true },
 ];
 
 const PANELS = [
   {
     no: "01",
-    label: "Attention",
-    body: "Someone has to want to look. That is a creative problem before it is a media one.",
+    label: "70–80%",
+    body: "Of GCC budgets go to paid media. The moment the budget stops — so does every impression.",
     src: campaignProfile,
     w: 1024,
     h: 1280,
   },
   {
     no: "02",
-    label: "Craft",
-    body: "Then the thing has to be worth the look. Composition, not decoration.",
+    label: "35–40%",
+    body: "Rise in GCC digital ad costs since 2021. Renting attention is getting more expensive every year.",
     src: campaignChrome,
     w: 1408,
     h: 1008,
   },
   {
     no: "03",
-    label: "System",
-    body: "Then it has to keep working — after the launch, on the tenth asset, without us.",
+    label: "3–5x",
+    body: "More trusted impressions from organic vs. paid. Consumers know the difference.",
     src: editorialMonolith,
-    // the one frame with a blue plane in it — held to chrome, see EditorialMonolith
     treat: "saturate-[0.14] sepia-[0.12] contrast-[1.06]",
     w: 1600,
     h: 1000,
   },
   {
     no: "04",
-    label: "Proof",
-    body: "Then it has to show up somewhere a finance team can find it.",
+    label: "99%",
+    body: "Social media penetration in UAE — the audience is already there. Earn their attention instead.",
     src: campaignObject,
     w: 1280,
     h: 912,
@@ -149,7 +148,7 @@ export function Statement() {
     >
       <div data-rise className="edge grid-12 w-full items-center gap-y-12">
         <div className="col-span-12 lg:col-span-4">
-          <p className="type-meta text-bone/60">003 — Point of view</p>
+          <p className="type-meta text-bone/60">003 — The paid media problem</p>
 
           <h2
             id="statement-heading"
@@ -169,7 +168,7 @@ export function Statement() {
           </h2>
 
           <p className="type-meta mt-9 flex items-center gap-3 text-bone/60 md:mt-12">
-            Independent since day one
+            Organic-first since day one
             <span aria-hidden="true" className="h-px w-8 bg-acid/60" />
             <span className="lg:hidden">Swipe →</span>
             <span className="hidden lg:inline">Scroll ↓</span>
