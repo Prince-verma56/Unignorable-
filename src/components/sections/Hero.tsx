@@ -41,12 +41,7 @@ export function Hero() {
     }, 0);
 
     // Text waits exactly 1 second into the video playback to start animating
-    tl.from(
-        q("[data-hero-rule]"),
-        { scaleX: 0, transformOrigin: "left center", duration: DUR.md, ease: EASE.out },
-        1.0
-      )
-      .from(q("[data-hero-eyebrow]"), { opacity: 0, duration: DUR.sm }, 1.07)
+    tl.from(q("[data-hero-eyebrow]"), { opacity: 0, duration: DUR.sm }, 1.0)
       .from(
         q("[data-line]"),
         { yPercent: 112, duration: DUR.lg, stagger: STAGGER.base, ease: EASE.out },
@@ -112,11 +107,6 @@ export function Hero() {
         <div data-hero-copy className="grid-12 flex-1 content-end relative">
           {/* Eyebrow Tags absolutely positioned at the top of the container */}
           <p className="absolute left-0 -top-6 md:-top-2 flex items-center gap-2 md:gap-4 col-span-12">
-            <span
-              data-hero-rule
-              aria-hidden="true"
-              className="block h-px w-10 shrink-0 bg-signal md:w-16"
-            />
             <span data-hero-eyebrow className="type-meta whitespace-nowrap text-[0.62rem] text-foreground drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)] sm:text-[0.7rem] rounded-sm bg-black/30 px-2 py-1 backdrop-blur-md md:bg-transparent md:p-0 md:backdrop-blur-none">
               Boutique · Digital-First · Unapologetic
             </span>
