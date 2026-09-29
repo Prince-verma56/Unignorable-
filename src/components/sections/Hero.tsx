@@ -74,7 +74,7 @@ export function Hero() {
     <section
       ref={ref}
       data-register="ink"
-      className="relative flex min-h-[100svh] flex-col overflow-hidden pt-24 md:pt-28"
+      className="relative flex min-h-[100svh] flex-col overflow-hidden pt-20 md:pt-24"
     >
       {/* ---------- media: fullscreen background video */}
       <div
@@ -122,8 +122,11 @@ export function Hero() {
             </span>
           </p>
 
-          <div className="col-span-12 lg:col-span-8 xl:col-span-7">
-            <h1 className="type-display mt-4 md:mt-6">
+          <div className="col-span-12 lg:col-span-9 xl:col-span-8">
+            <h1
+              className="type-display mt-3 md:mt-4"
+              style={{ fontSize: "clamp(2.6rem, 6.2vw, 7.2rem)" }}
+            >
               {["We Don't", "Play By"].map((line) => (
                 <span key={line} className="block overflow-hidden pb-[0.04em]">
                   <span data-line className="block">
@@ -146,11 +149,11 @@ export function Hero() {
               </span>
             </h1>
 
-            <p data-hero-enter className="type-lead mt-6 text-foreground/90 drop-shadow-[0_1px_8px_rgba(0,0,0,0.45)] md:mt-7">
+            <p data-hero-enter className="type-lead mt-4 text-foreground/90 drop-shadow-[0_1px_8px_rgba(0,0,0,0.45)] md:mt-5">
               Game Changer Marketing Agency — The GCC’s Organic-First Growth Partner.
             </p>
 
-            <div data-hero-enter className="mt-7 flex flex-wrap items-center gap-x-8 gap-y-4 md:mt-8">
+            <div data-hero-enter className="mt-5 flex flex-wrap items-center gap-x-8 gap-y-4 md:mt-6">
               <Action asChild variant="inverse" arrow={false}>
                 <Link to="/contact" data-cursor="cta">
                   Free Growth Audit
